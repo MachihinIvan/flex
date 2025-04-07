@@ -105,7 +105,7 @@ body {
   .enterContainer {
     max-width: 250px;
     height: 150px;
-    margin-top: 50%;
+    margin-top: 0%;
   }
   
   .submitHref {
@@ -395,16 +395,16 @@ body {
       
       .loginForm {
         background-color: rgb(250, 147, 63);
-        width: 500px;
-        height: 60px;
+        width: 300px;
+        height: 100px;
         border-radius: 8px;
         padding-top: 10px;
       }
       
       .passwordForm {
         background-color: rgb(250, 147, 63);
-        width: 500px;
-        height: 60px;
+        width: 300px;
+        height: 100px;
         border-radius: 8px;
         padding-top: 10px;
       }
@@ -414,8 +414,9 @@ body {
         background-color: rgb(255, 255, 255);
         position: relative;
         margin-top: 5px;
+        margin-left: 10px;
         height: 40px;
-        width: 350px;
+        width: 250px;
         border: none;
         
       }
@@ -435,9 +436,11 @@ body {
       }
       
       .enterContainer {
-        max-width: 500px;
+        max-width: 320px;
         height: 300px;
-        margin-top: 50%;
+        margin-top: 40%;
+        padding-left: 0px;
+
       }
       
       .submitHref {
@@ -451,18 +454,18 @@ body {
         margin-top: 4px;
         border: none;
         display: block;
-        margin-left: 140px;
+        margin-left: 50px;
       }
     
       .regContainer {
-        max-width: 500px;
+        max-width: 300px;
         height: 300px;
-        margin-top: 20%;
+        margin-top: 0%;
       }
 
       .regPasswordForm {
         background-color: rgb(250, 147, 63);
-        width: 430px;
+        width: 275px;
         height: 90px;
         border-radius: 8px;
         padding-top: 5px;
@@ -480,30 +483,31 @@ body {
         margin-top: 4px;
         border: none;
         display: block;
-        margin-left: 70px;
+        margin-left: 0px;
+        margin-bottom: 20px;
         text-align: center;
       }
       
+      
       .regloginForm {
         background-color: rgb(250, 147, 63);
-        width: 430px;
+        width: 275px;
         height: 90px;
         border-radius: 8px;
-        padding-top: 5px;
         padding-left: 20px;
         
       }
       
       select {
         margin-top: 6px;
+        margin-left: 10px;
         background-color: white;
         height: 30px;
-        width: 300px;
+        width: 255px;
+        border: none;
       }
       
-      option {
-        background-color: white;
-      }
+      
         
   }
   
