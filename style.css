@@ -329,4 +329,181 @@ body {
       }
         
   }
+
+  @media only screen and (max-width: 320px) {
+    .header {
+        height: 200px;
+        width: 300px;
+        background-color: rgb(247, 249, 250);
+        font-size: 40px;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+      .buttonsContainer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .enterHref {
+        height: 60px;
+        width: 300px;
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        border-radius: 8px;
+        position: relative;
+        padding-top: 5px;
+        margin-top: 4px;
+        border: none;
+        display: block;
+      }
+      
+      .regHref {
+        height: 60px;
+        width: 300px;
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        border-radius: 8px;
+        position: relative;
+        padding-top: 5px;
+        margin-top: 4px;
+        border: none;
+        display: block;
+      }
+      
+      .regButton {
+        width: 230px;
+        position: relative;
+        margin-bottom: 30px;
+      }
+      
+      .buttonsContainer {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .enterButton {
+        width: 200px;
+      }
+
+      .mainContainer {
+        margin-top: 0vh;
+      }
+      
+      .loginForm {
+        background-color: rgb(250, 147, 63);
+        width: 500px;
+        height: 60px;
+        border-radius: 8px;
+        padding-top: 10px;
+      }
+      
+      .passwordForm {
+        background-color: rgb(250, 147, 63);
+        width: 500px;
+        height: 60px;
+        border-radius: 8px;
+        padding-top: 10px;
+      }
+      
+     
+      input {
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        margin-top: 5px;
+        height: 40px;
+        width: 350px;
+        border: none;
+        
+      }
+      
+      label {
+        margin-left: 12px;
+        
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        
+        
+      }
+      span {
+        background-color: rgb(250, 147, 63);
+        
+       
+      }
+      
+      .enterContainer {
+        max-width: 500px;
+        height: 300px;
+        margin-top: 50%;
+      }
+      
+      .submitHref {
+        height: 60px;
+        width: 200px;
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        border-radius: 8px;
+        position: relative;
+        padding-top: 5px;
+        margin-top: 4px;
+        border: none;
+        display: block;
+        margin-left: 140px;
+      }
+    
+      .regContainer {
+        max-width: 500px;
+        height: 300px;
+        margin-top: 20%;
+      }
+
+      .regPasswordForm {
+        background-color: rgb(250, 147, 63);
+        width: 430px;
+        height: 90px;
+        border-radius: 8px;
+        padding-top: 5px;
+        padding-left: 20px;
+      }
+      
+      .regSubmitHref {
+        height: 60px;
+        width: 300px;
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        border-radius: 8px;
+        position: relative;
+        padding-top: 3px;
+        margin-top: 4px;
+        border: none;
+        display: block;
+        margin-left: 70px;
+        text-align: center;
+      }
+      
+      .regloginForm {
+        background-color: rgb(250, 147, 63);
+        width: 430px;
+        height: 90px;
+        border-radius: 8px;
+        padding-top: 5px;
+        padding-left: 20px;
+        
+      }
+      
+      select {
+        margin-top: 6px;
+        background-color: white;
+        height: 30px;
+        width: 300px;
+      }
+      
+      option {
+        background-color: white;
+      }
+        
+  }
   
