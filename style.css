@@ -244,7 +244,8 @@ body {
       }
       
       label {
-        margin-left: 6px;
+        margin-left: 12px;
+        
         background-color: rgb(250, 147, 63);
         font-size: 30px;
         
@@ -252,6 +253,7 @@ body {
       }
       span {
         background-color: rgb(250, 147, 63);
+        
        
       }
       
@@ -274,6 +276,57 @@ body {
         display: block;
         margin-left: 140px;
       }
+    
+      .regContainer {
+        max-width: 500px;
+        height: 300px;
+        margin-top: 20%;
+      }
 
+      .regPasswordForm {
+        background-color: rgb(250, 147, 63);
+        width: 430px;
+        height: 90px;
+        border-radius: 8px;
+        padding-top: 5px;
+        padding-left: 20px;
+      }
+      
+      .regSubmitHref {
+        height: 60px;
+        width: 300px;
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        border-radius: 8px;
+        position: relative;
+        padding-top: 3px;
+        margin-top: 4px;
+        border: none;
+        display: block;
+        margin-left: 70px;
+        text-align: center;
+      }
+      
+      .regloginForm {
+        background-color: rgb(250, 147, 63);
+        width: 430px;
+        height: 90px;
+        border-radius: 8px;
+        padding-top: 5px;
+        padding-left: 20px;
+        
+      }
+      
+      select {
+        margin-top: 6px;
+        background-color: white;
+        height: 30px;
+        width: 300px;
+      }
+      
+      option {
+        background-color: white;
+      }
+        
   }
   
