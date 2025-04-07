@@ -216,6 +216,64 @@ body {
         margin-top: 40vh;
       }
       
+      .loginForm {
+        background-color: rgb(250, 147, 63);
+        width: 500px;
+        height: 60px;
+        border-radius: 8px;
+        padding-top: 10px;
+      }
+      
+      .passwordForm {
+        background-color: rgb(250, 147, 63);
+        width: 500px;
+        height: 60px;
+        border-radius: 8px;
+        padding-top: 10px;
+      }
+      
+     
+      input {
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        margin-top: 5px;
+        height: 40px;
+        width: 350px;
+        border: none;
+        
+      }
+      
+      label {
+        margin-left: 6px;
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        
+        
+      }
+      span {
+        background-color: rgb(250, 147, 63);
+       
+      }
+      
+      .enterContainer {
+        max-width: 500px;
+        height: 300px;
+        margin-top: 50%;
+      }
+      
+      .submitHref {
+        height: 60px;
+        width: 200px;
+        background-color: rgb(250, 147, 63);
+        font-size: 30px;
+        border-radius: 8px;
+        position: relative;
+        padding-top: 5px;
+        margin-top: 4px;
+        border: none;
+        display: block;
+        margin-left: 140px;
+      }
 
   }
   
