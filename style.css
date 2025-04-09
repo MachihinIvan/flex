@@ -34,6 +34,11 @@ body {
     margin-top: 4px;
     border: none;
     display: block;
+    transition: background 0.25s ease-in;
+  }
+
+  .enterHref:hover{
+    background: rgb(78, 144, 249);
   }
   
   .regHref {
@@ -47,6 +52,11 @@ body {
     margin-top: 4px;
     border: none;
     display: block;
+    transition: background 0.25s ease-in;
+  }
+
+  .regHref:hover{
+    background: rgb(78, 144, 249);
   }
   
   .regButton {
@@ -66,7 +76,11 @@ body {
   
   .mainContainer {
     margin-top: 50vh;
+    height: 500px;
+    width: 300px;
+    
   }
+  
   
   * {
     background-color: rgb(66, 63, 63);
@@ -95,6 +109,12 @@ body {
     background-color: rgb(255, 255, 255);
     position: relative;
     margin-top: 5px;
+    border: none;
+    transition: background 0.25s;
+  }
+
+  input:focus{
+    background: rgb(169, 166, 243);
   }
   
   label {
@@ -120,6 +140,11 @@ body {
     border: none;
     display: block;
     margin-left: 70px;
+    transition: background 0.25s ease-in-out ;
+  }
+
+  .submitHref:hover{
+    background: blueviolet;
   }
   
   .regPasswordForm {
@@ -142,6 +167,11 @@ body {
     display: block;
     margin-left: 70px;
     text-align: center;
+    transition: background 0.25s ease-in;
+  }
+
+  .regSubmitHref:hover{
+    background: blueviolet;
   }
   
   .regloginForm {
@@ -154,6 +184,12 @@ body {
   select {
     margin-top: 6px;
     background-color: white;
+    border: none;
+    transition:background 1s ;
+  }
+
+  select:focus{
+    background: cornflowerblue;
   }
   
   option {
