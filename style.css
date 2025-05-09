@@ -22,7 +22,91 @@ body {
     background-color: rgb(250, 147, 63);
     color: rgb(0, 0, 0);
   }
+
+  .foodContainer{
+    position: absolute;
+    top: 0;
+    left: 44%;
+    transition: transform 0.3s;
+    z-index: 0;
+  }
+
+  .animate{
+    transform: translateY(420px);
+  }
+ 
+  .food1{
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+    background-color: brown;
+    
+  }
+  .food2{
+    height: 5px;
+    width: 5px;
+    background-color: brown;
+    
+  }
+  .food3{
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+    background-color: brown;
+    
+  }
+  .food4{
+    height: 5px;
+    width: 5px;
+    background-color: brown;
+    
+  }
+  .food5{
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+    background-color: brown;
+    
+  }
+
   
+
+  .cat{
+    height: 60px;
+    width: 60px;
+    flex: 0 0 60px;
+    margin-left: 100px;
+  
+  }
+
+  .cup{
+    height: 30px;
+    width: 40px;
+    margin-top: 30px;
+    position: relative;
+    flex: 0 0 40px;
+    z-index: 1;
+  }
+  
+  .catContainer{
+    display: flex;
+    gap: 10px;
+    height: 60px;
+    justify-content: flex-end;
+    
+  }
+  .foodForCat{
+    border: none;
+    background:  rgb(250, 147, 63);
+    height: 30px;
+    width: 210px;
+    font-size: 15px;
+    border-radius: 8px;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 45px;
+  }
+
   .enterHref {
     height: 30px;
     width: 100px;
@@ -67,7 +151,9 @@ body {
   
   .buttonsContainer {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    height: 60px;
   }
   
   .enterButton {
@@ -77,13 +163,13 @@ body {
   .mainContainer {
     margin-top: 50vh;
     height: 500px;
-    width: 300px;
+    width: 210px;
     
   }
   
   
   * {
-    background-color: rgb(66, 63, 63);
+    background-color: rgb(255, 255, 255);
     font-family: "Roboto", sans-serif;
   }
   
