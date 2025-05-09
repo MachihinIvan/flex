@@ -24,15 +24,17 @@ body {
   }
 
   .foodContainer{
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 44%;
-    transition: transform 0.3s;
+    transition: transform 0.3s, opacity 0s;
     z-index: 0;
   }
 
   .animate{
-    transform: translateY(420px);
+    transform: translateY(340px);
+    opacity: 1;
   }
  
   .food1{
@@ -161,7 +163,7 @@ body {
   }
   
   .mainContainer {
-    margin-top: 50vh;
+    margin-top: 40vh;
     height: 500px;
     width: 210px;
     
