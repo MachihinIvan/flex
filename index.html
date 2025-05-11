@@ -21,6 +21,9 @@
       <div class="food4"></div>
       <div class="food5"></div>
     </div>
+
+    <button class="langBtn">change language</button>
+
     <div class="mainContainer">
       <div class="catContainer">
         <img class="cup" src="media/cute-vector-bowl-of-soup-in-pixel-art-style-perfect-for-stickers-and-food-decorations_515427-248.jpg" alt="">
@@ -38,12 +41,42 @@
         </div>
         <button class="foodForCat"> Покормить кота</button>
       </div>
-
-      
-        
-      
-
     </div>
+
+
     <script src="script.js"></script>
+
+
+    <script src="https://unpkg.com/i18next@25.1.2/dist/umd/i18next.min.js"></script>
+    <script type="module" >
+
+      import ru from "./languages/ru.js";
+      import en from "./languages/en.js";
+       const langBtn = document.querySelector('.langBtn')
+      const output = (err, t) => {
+        if (err) {
+          return console.log('something went wrong loading', err);
+        }
+        document.querySelector('.enterHref').innerHTML = t('enterHref');
+        langBtn.innerHTML = t('changelang');
+      };
+      
+      i18next.init(
+      {
+        lng: 'ru',
+        fallbackLng : ["en","ru"],
+        resources: {
+          ru,
+          en 
+        }
+      },
+      output
+      );
+
+      langBtn.onclick = () => {
+        const lang = i18next.language === "ru" ? "en" : "ru";
+        i18next.changeLanguage(lang, output);
+      };
+      </script>
   </body>
 </html>
