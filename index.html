@@ -44,20 +44,22 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 
 
     <script src="https://unpkg.com/i18next@25.1.2/dist/umd/i18next.min.js"></script>
     <script type="module" >
 
-      import ru from "./languages/ru.js";
-      import en from "./languages/en.js";
+      import ru from "languages/ru.js";
+      import en from "languages/en.js";
        const langBtn = document.querySelector('.langBtn')
       const output = (err, t) => {
         if (err) {
           return console.log('something went wrong loading', err);
         }
         document.querySelector('.enterHref').innerHTML = t('enterHref');
+        document.querySelector('.regHref').innerHTML = t('regHref');
+        document.querySelector('.foodForCat').innerHTML = t('foodForCat');
         langBtn.innerHTML = t('changelang');
       };
       
