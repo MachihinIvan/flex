@@ -1,9 +1,8 @@
 export default {
-    translation: {
-      enterHref: "Enter",
-      changelang: "Сменить язык",
-      foodForCat: "feed the cat",
-      regHref: "registration"
-     
-    }
-  };
+  translation: {
+    enterHref: "Вход",
+    changelang: "change language",
+    foodForCat: "Покормить кота",
+    regHref: "Регестрация"
+  }
+};

@@ -48,8 +48,11 @@
 
 
     <script src="https://unpkg.com/i18next@25.1.2/dist/umd/i18next.min.js"></script>
-    <script type="module" >
-
+   
+   
+   
+   <script type="module" >
+      document.addEventListener("DOMContentLoaded", function () {
       import ru from "languages/ru.js";
       import en from "languages/en.js";
        const langBtn = document.querySelector('.langBtn')
@@ -79,6 +82,9 @@
         const lang = i18next.language === "ru" ? "en" : "ru";
         i18next.changeLanguage(lang, output);
       };
+});
+
+      
       </script>
   </body>
 </html>
