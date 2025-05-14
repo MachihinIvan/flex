@@ -53,17 +53,26 @@
    
    <script type="module" >
       document.addEventListener("DOMContentLoaded", function () {
-      import ru from "languages/ru.js";
-      import en from "languages/en.js";
-       const langBtn = document.querySelector('.langBtn')
+      const langData = {
+        ru: await import('./languages/ru.js'),
+        en: await import('./languages/en.js')
+      }  
+      
+      const langBtn = document.querySelector('.langBtn')
       const output = (err, t) => {
         if (err) {
           return console.log('something went wrong loading', err);
         }
-        document.querySelector('.enterHref').innerHTML = t('enterHref');
-        document.querySelector('.regHref').innerHTML = t('regHref');
-        document.querySelector('.foodForCat').innerHTML = t('foodForCat');
-        langBtn.innerHTML = t('changelang');
+        const setTextIfExists = (selector, key) => {
+        elem = document.querySelector(selector);
+        if (elem) elem.innerHTML = i18next.t(key);
+        };
+
+        setTextIfExists('.enterHref', 'enterHref');
+        setTextIfExists('.regHref', 'regHref');
+        setTextIfExists('.foodForCat', 'foodForCat');
+        setTextIfExists('.langBtn', 'changelang');
+
       };
       
       i18next.init(
@@ -71,12 +80,10 @@
         lng: 'ru',
         fallbackLng : ["en","ru"],
         resources: {
-          ru,
-          en 
-        }
+        langData  
       },
       output
-      );
+      });
 
       langBtn.onclick = () => {
         const lang = i18next.language === "ru" ? "en" : "ru";
