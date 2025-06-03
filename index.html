@@ -75,15 +75,14 @@
 
       };
       
-      i18next.init(
-      {
-        lng: 'ru',
-        fallbackLng : ["en","ru"],
-        resources: {
-        langData  
-      },
-      output
-      });
+      i18next.init({
+      lng: 'ru',
+      fallbackLng: ["en", "ru"],
+      resources: {
+      en: { translation: (await import('./languages/en.js')).default },
+      ru: { translation: (await import('./languages/ru.js')).default }
+    }
+    }, output);
 
       langBtn.onclick = () => {
         const lang = i18next.language === "ru" ? "en" : "ru";
