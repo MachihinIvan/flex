@@ -24,13 +24,13 @@ loginInputForm.addEventListener("input", function() {
      }
   });
 
-  emailImput.addEventListener("input", function() {
+  emailImput.addEventListener("blur", function() {
     const oldError2 = regContainer.querySelector(".login-error");
     if (oldError2) {
         oldError2.remove();
         regSubmitHref.style.background = "rgb(250, 147, 63)"
     }
-    if (emailImput.value && reEm.test(emailImput.value)){
+    if (emailImput.value && !reEm.test(emailImput.value)){
         const loginMistake2 = document.createElement("div")
         loginMistake2.textContent = "Введите Email"
         loginMistake2.classList.add("login-error")
